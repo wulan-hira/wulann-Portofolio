@@ -1114,3 +1114,31 @@ img {
   transform: translateY(0px) scale(0.96);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+/* =========================
+   CERTIFICATE FINAL FIX
+========================= */
+@media screen and (max-width: 768px) {
+
+  .certificate-slider {
+    display: flex !important;
+    flex-wrap: nowrap !important;   /* WAJIB */
+    overflow-x: auto !important;    /* WAJIB */
+    gap: 15px;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .certificate-card {
+    flex: 0 0 70% !important;  /* ukuran card */
+    max-width: 70% !important;
+  }
+
+  .certificate-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* gak kepotong */
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
