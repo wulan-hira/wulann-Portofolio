@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
@@ -294,29 +295,37 @@
 </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Contact</h2>
-        <p>Jika ada yang ingin ditanyakan silahkan hubungi saya, sebagai berikut :</p>
-        <ul>
-          <li><strong>Email :</strong> hirakalila22@gmail.com</li>
-          <li><strong>No. Telpon :</strong> +62 852-5966-3099</li>
-        </ul>
+ <section class="contact">
+  <div class="contact-container">
+
+    <!-- KIRI -->
+    <div class="contact-info">
+      <h2>Contact</h2>
+      <p>Jika ada yang ingin ditanyakan, silakan hubungi saya melalui:</p>
+
+      <div class="contact-item">
+        <strong>Email</strong>
+        <span>hirawulan01@gmail.com</span>
       </div>
-      <div class="contact-form">
-        <form>
-          <label>Nama :</label>
-          <input type="text" placeholder="Kala Laira" required>
-          <label>Email :</label>
-          <input type="email" placeholder="kla21@gmail.com" required>
-          <label>Pesan :</label>
-          <textarea placeholder="Hallo, saya mempunyai pertanyaan..." required></textarea>
-          <button type="submit" class="btn">Kirim</button>
-        </form>
+
+      <div class="contact-item">
+        <strong>No. Telpon</strong>
+        <span>+62 852-5966-3099</span>
       </div>
     </div>
-  </section>
+
+    <!-- KANAN -->
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Nama">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Tulis pesan kamu..."></textarea>
+        <button type="submit" class="btn primary">Kirim</button>
+      </form>
+    </div>
+
+  </div>
+</section>
 
   <footer>
     <p>© 2025 Wulan Hira. Portofolio.</p>

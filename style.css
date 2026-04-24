@@ -863,12 +863,19 @@ img {
 
  @media screen and (max-width: 768px) {
 
+ @media screen and (max-width: 768px) {
   .home {
-    flex-direction: row;
+    flex-direction: column;   /* 🔥 ini kuncinya */
     align-items: center;
-    gap: 25px;
-    padding: 60px 5%;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 5%;
   }
+
+  .home-img {
+    order: -1; /* foto pindah ke atas */
+  }
+}
 
   .home-text {
     flex: 1.2;
@@ -1140,5 +1147,122 @@ img {
     background: #fff;
     padding: 5px;
     border-radius: 8px;
+  }
+}
+/* =========================
+   CONTACT CLEAN VERSION
+========================= */
+
+.contact {
+  padding: 80px 10%;
+  background: #dde5ff;
+}
+
+/* CONTAINER */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* ================= LEFT ================= */
+.contact-info {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+/* ITEM */
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--primary);
+  margin-bottom: 3px;
+}
+
+.contact-item span {
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+/* ================= RIGHT ================= */
+.contact-form {
+  flex: 1;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  background: #ffffff;
+  transition: 0.25s ease;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+  outline: none;
+}
+
+/* BUTTON */
+.contact-form .btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: var(--primary-hover);
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
   }
 }
